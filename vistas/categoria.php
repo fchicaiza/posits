@@ -24,7 +24,9 @@ require 'header.php';
                             <th>Descripción</th>
                             <th>Estado</th>
                           </thead>
-                          <tbody>                            
+                          <tbody>    
+                              
+                              hola que hace
                           </tbody>
                           <tfoot>
                             <th>Opciones</th>
