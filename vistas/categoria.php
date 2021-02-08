@@ -22,7 +22,7 @@ require 'header.php';
                             <th>Opciones</th>
                             <th>Nombre</th>
                             <th>Descripción</th>
-                            <th>Estado</th>
+                            <th>Estado 1.0</th>
                           </thead>
                           <tbody>    
                               
@@ -32,7 +32,7 @@ require 'header.php';
                             <th>Opciones</th>
                             <th>Nombre</th>
                             <th>Descripción</th>
-                            <th>Estado</th>
+                            <th>Estado 1.0</th>
                           </tfoot>
                         </table>
                     </div>
