@@ -26,7 +26,7 @@ require 'header.php';
                           </thead>
                           <tbody>    
                               
-                              hola que hace desde desarrollo
+                              hola que hace desde desarrollo en pc Remota
                           </tbody>
                           <tfoot>
                             <th>Opciones</th>
