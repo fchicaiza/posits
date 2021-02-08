@@ -26,7 +26,7 @@ require 'header.php';
                           </thead>
                           <tbody>    
                               
-                              hola que hace
+                              hola que hace desde desarrollo
                           </tbody>
                           <tfoot>
                             <th>Opciones</th>
