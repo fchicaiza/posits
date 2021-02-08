@@ -99,4 +99,54 @@ function guardaryeditar(e)
 	limpiar();
 }
 
+
+//funcion para mostrar datos antes de editar
+function mostrar(idcategoria){
+    
+    $.post("../ajax/categoria.php?op=mostrar",{idcategoria : idcategoria }, function (data,status)
+    {
+       data = JSON.parse(data);
+        mostrarform(true);
+        
+       $("#nombre").val(data.nombre);
+        $("#descripcion").val(data.descripcion);
+         $("#idcategoria").val(data.idcategoria);
+       
+    });
+}
+
+//Funcion para desactivar categoria
+function desactivar(idcategoria)
+{
+
+    bootbox.confirm("¿Está seguro de desctivar la categoría?", function(result){
+        if(result)
+        {
+            $.post("../ajax/categoria.php?op=desactivar", {idcategoria: idcategoria},function(e){
+                bootbox.alert(e);
+                tabla.ajax.reload();
+            });
+
+        }
+    });
+    
+}
+       
+//Funcion para activar categoria
+function activar(idcategoria)
+{
+
+    bootbox.confirm("¿Está seguro de activar la categoría?", function(result){
+        if(result)
+        {
+            $.post("../ajax/categoria.php?op=activar", {idcategoria: idcategoria},function(e){
+                bootbox.alert(e);
+                tabla.ajax.reload();
+            });
+
+        }
+    });
+    
+}
+
 init();
